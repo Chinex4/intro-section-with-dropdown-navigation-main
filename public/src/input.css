@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('fonts/Roboto-Regula.ttf');
+}
+
+/* npx tailwindcss -i ./public/src/input.css -o ./public/output.css --watch */

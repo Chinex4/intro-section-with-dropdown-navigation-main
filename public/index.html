@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Section pge with Dropdown Menu | By Chinex</title>
+    <link rel="stylesheet" href="css/output.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body class="antialiased">
+    <div class="w-full min-h-screen bg-almostWhite py-8 lg:py-7 lg:px-9">
+        <div>
+            <nav class="px-4 lg:px-0 flex">
+                <div class="w-full flex justify-between items-center lg:w-fit">
+                    <!-- Brand name -->
+                    <img src="../images/logo.svg" alt="logo">
+                    <!-- Toggle button -->
+                    <button id="mobile-menu-toggle" class="z-30">
+                        <img id="hamburgerIcon" src="../images/icon-menu.svg" alt="menu" class="lg:hidden">
+                    </button>
+                </div>
+
+                <!-- Navbar features -->
+                <div class="hidden lg:flex lg:justify-between lg:items-center lg:w-full lg:ml-16">
+                    <ul class="flex space-x-6 text-mediumGray">
+                        <li id="desktop-dropdown-btn1">
+                            <button class="hover:text-almostBlack flex space-x-2 items-center">
+                                <a>Features</a>
+                                <img src="../images/icon-arrow-down.svg" alt="arrow">
+                            </button>
+                            <div id="desktop-dropdown-menu-1" class="bg-almostWhite shadow-xl hidden scale-0 
+                            rounded-md px-6 py-4 absolute transform origin-top 
+                            transition-all">
+                                <ul>
+                                    <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                        <img src="../images/icon-todo.svg" alt="icon-todo">
+                                        <a href="#">Todo List</a>
+                                    </li>
+                                    <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                        <img src="../images/icon-calendar.svg" alt="icon-calendar">
+                                        <a href="#">Calender</a>
+                                    </li>
+                                    <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                        <img src="../images/icon-reminders.svg" alt="icon-reminders">
+                                        <a href="#">Reminders</a>
+                                    </li>
+                                    <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                        <img src="../images/icon-planning.svg" alt="icon-planning">
+                                        <a href="#">Planning</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="desktop-dropdown-btn2">
+                            <button class="hover:text-almostBlack flex space-x-2 items-center">
+                                <a>Company</a>
+                                <img src="../images/icon-arrow-down.svg" alt="arrow">
+                            </button>
+                            <div id="desktop-dropdown-menu-2" class="bg-almostWhite shadow-xl hidden scale-0 
+                            rounded-md px-6 py-4 absolute transform origin-top 
+                            transition-all">
+                                <ul>
+                                    <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                        <a href="#">History</a>
+                                    </li>
+                                    <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                        <a href="#">Our Team</a>
+                                    </li>
+                                    <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                        <a href="#">Blog</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover:text-almostBlack">
+                            <a href="#">Careers</a>
+                        </li>
+                        <li class="hover:text-almostBlack">
+                            <a href="#">About</a>
+                        </li>
+                    </ul>
+                    <div class="flex items-center space-x-8 text-mediumGray">
+                        <a href="#" class="block hover:text-almostBlack">Login</a>
+                        <a href="#"
+                            class="block hover:text-almostBlack border 
+                            border-almostBlack rounded-xl w-24 
+                            text-center py-2">Register</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile menu expanded -->
+
+        <div id="mobile-menu"
+            class="lg:hidden text-mediumGray fixed inset-y-0 right-0 w-64 px-8 
+            bg-almostWhite shadow-md transform transition-transform translate-x-full 
+            duration-300 ease-in-out z-20 space-y-6">
+            <ul class="mt-20">
+                <li class="py-3 ">
+                    <button id="dropdown-btn1" class="flex space-x-3 items-center hover:text-almostBlack">
+                        <a>Features</a>
+                        <img id="arrow1" src="../images/icon-arrow-down.svg" alt="arrow">
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown-menu-1" class="px-6 hidden transform scale-0 transition-transform origin-top">
+                        <ul>
+                            <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                <img src="../images/icon-todo.svg" alt="icon-todo">
+                                <a href="#">Todo List</a>
+                            </li>
+                            <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                <img src="../images/icon-calendar.svg" alt="icon-calendar">
+                                <a href="#">Calender</a>
+                            </li>
+                            <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                <img src="../images/icon-reminders.svg" alt="icon-reminders">
+                                <a href="#">Reminders</a>
+                            </li>
+                            <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                <img src="../images/icon-planning.svg" alt="icon-planning">
+                                <a href="#">Planning</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="py-3 ">
+                    <button id="dropdown-btn2" class="flex space-x-3 items-center hover:text-almostBlack">
+                        <a>Company</a>
+                        <img id="arrow2" src="../images/icon-arrow-down.svg" alt="arrow">
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdown-menu-2" class="px-6 hidden transform scale-0 transition-transform origin-top">
+                        <ul>
+                            <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                <a href="#">History</a>
+                            </li>
+                            <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                <a href="#">Our Team</a>
+                            </li>
+                            <li class="flex space-x-3 py-2 items-center hover:text-almostBlack">
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="py-3 hover:text-almostBlack">
+                    <a href="#">Careers</a>
+                </li>
+                <li class="py-3 hover:text-almostBlack">
+                    <a href="#">About</a>
+                </li>
+            </ul>
+            <div class="space-y-4">
+                <a href="#" class="block w-full text-center hover:text-almostBlack">Login</a>
+                <a href="#"
+                    class="block w-full text-center border border-almostBlack 
+                    rounded-3xl py-2 hover:text-almostBlack">Register</a>
+            </div>
+        </div>
+
+        <!-- Main Page -->
+        <div class="lg:w-full lg:px-32 flex flex-col lg:flex-row-reverse space-y-8 lg:space-y-0 mt-24 lg:gap-x-40">
+            <div class="">
+                <img class="lg:hidden" src="../images/image-hero-mobile.png" alt="">
+                <img class="hidden lg:block w-[620px]" src="../images/image-hero-desktop.png" alt="">
+            </div>
+            <div class="px-4 space-y-12 lg:flex lg:flex-col lg:justify-between">
+                <div class="text-mediumGray space-y-8 lg:space-y-8 text-center lg:text-left">
+                    <h1 class="text-almostBlack text-[34px] lg:text-7xl font-extrabold">Make remote work</h1>
+                    <p class="text-lg text-mediumGray">
+                        Get your team in sync, no matter your location. Streamline processes,
+                        create team rituals, and watch productivity soar.
+                    </p>
+                    <div class="w-full grid place-items-center lg:place-items-start">
+                        <a href="#" class="block w-32 bg-almostBlack text-almostWhite rounded-3xl py-2
+                            hover:bg-almostWhite hover:text-almostBlack hover:border hover:border-almostBlack 
+                            text-center transition-all">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+                <div class="flex items-center w-full justify-center lg:justify-start lg:space-x-8">
+                    <img class="" src="../images/client-databiz.svg" alt="">
+                    <img class="" src="../images/client-audiophile.svg" alt="">
+                    <img class="" src="../images/client-meet.svg" alt="">
+                    <img class="" src="../images/client-maker.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Dark transparent background -->
+        <div id="overlay" class="lg:hidden fixed inset-0 bg-black opacity-50 z-10 hidden"></div>
+    </div>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
